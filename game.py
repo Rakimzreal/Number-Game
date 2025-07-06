@@ -28,5 +28,9 @@ def computer_guess_game():
     print(f'The computer guessed your number {computer_guess} correctly!! ')
 
 
-
-computer_guess_game()
+while True:
+    computer_guess_game()
+    restart = input('Do you want to play again?: (Y/N) ').lower().strip()
+    if restart != 'y':
+        print('Bye! See you soon')
+        break
