@@ -1,10 +1,12 @@
 import random
 
 def computer_guess_game():
-    try:
-        x = int(input('Enter a maximum number: '))
-    except ValueError:
-        print('Invalid input! ')
+    while True:
+        try:
+            x = int(input('Enter a maximum number: '))
+            break
+        except ValueError:
+            print('Invalid input! ')
 
     low = 1
     high = x
