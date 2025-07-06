@@ -11,6 +11,10 @@ def computer_guess_game():
     feedback = ''
     attempts = 0
     while feedback != 'c':
+        if low > high:
+            print('Your answers have caused a contradiction ')
+            print('Please give honest feedback ')
+            return
         computer_guess = random.randint(low , high)
         print(f'Computer guessed {computer_guess}')
         feedback = input('Is it too high (H), too low (L), or correct (C): ').lower().strip()
