@@ -17,4 +17,12 @@ def computer_guess_game():
         attempts +=1
         print('Tries: ',attempts)
         
-    
+        if feedback == 'h':
+            high = computer_guess - 1 
+        elif feedback == 'l':
+            low = computer_guess + 1
+    print(f'The computer guessed your number {computer_guess} correctly!! ')
+
+
+
+computer_guess_game()
